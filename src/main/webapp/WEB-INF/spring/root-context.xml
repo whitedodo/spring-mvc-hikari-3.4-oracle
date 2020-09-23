@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
+		<!-- Oracle 9 이상으로 작성. -->
+		<!-- 오라클 9 이후에 oracle.jdbc.driver.OracleDriver는 중단되었음.  -->
+		<!-- oracle.jdbc.pool.OracleDataSource -->
+		<!-- jdbc:oracle:thin:@localhost:1521:orcl -->
+		
+		<!-- MySQL 연동하기 -->
+		<!-- DriverClassName: com.mysql.cj.jdbc.Driver -->
+		<!-- URL: jdbc:mysql://localhost:3306/{DBName}?serverTimezone=UTC&characterEncoding=utf8 -->
+		
+		<!-- 수정영역: db.properties(src/main/resources에 위치함 -->
+
+ 		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:orcl"></property> 
+		<property name="username" value="{UserName}"></property>
+		<property name="password" value="{Password}"></property>
+	</bean>	
+	
+	<bean id="datasource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+		<constructor-arg ref="hikariConfig"></constructor-arg>
+	</bean>
+	
+</beans>
