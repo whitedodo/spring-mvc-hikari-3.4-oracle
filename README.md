@@ -24,7 +24,7 @@ Spring MVC - HikariCP-3.4(Connection Pool)과 Oracle 19 연동하기(Java. Prope
 
 ### 2. 시연(Demonstration)
 ##### 1. [1부] Spring-MVC, HikariCP 3.4, Oracle 19g 연동하기(Java, Properties 방식), https://youtu.be/VqTfvzu5uDM, Accessed by 2020-09-23, Last Modified 2020-09-23.
-
+##### 2. [2부] Spring-MVC, HikariCP 3.4, Oracle 19g 연동하기 - SQL Developer, https://youtu.be/NFiAQUfw1WQ, Accessed by 2020-09-23, Last Modified 2020-09-23.
 
 ### 3. 참고자료(Reference)
 ##### 1. Maven Repository: Search/Browse/Explore, https://mvnrepository.com/, Accessed by 2020-09-20, Last Modified .
