@@ -1,5 +1,5 @@
-# spring-mvc-hikari-3.4-oracle
-Spring MVC - Hikari-3.4(Connection Pool)과 Oracle 19 연동하기(Java. Properties방식)
+# spring-mvc-hikariCP-3.4-oracle
+Spring MVC - HikariCP-3.4(Connection Pool)과 Oracle 19 연동하기(Java. Properties방식)
 
 ### 기본 정보(Information)
 ##### 제작일자(Create date): 2020-09-22 ~ 2020-09-23
@@ -14,6 +14,7 @@ Spring MVC - Hikari-3.4(Connection Pool)과 Oracle 19 연동하기(Java. Propert
 ##### (소프트웨어 프로젝트 관리 및 이해 도구)
 ##### 2. javax.servlet-api (4.0.1) - https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
 ##### 3. mysql-connector-java (8.0.21) - https://mvnrepository.com/artifact/mysql/mysql-connector-java
+##### 4. HikariCP 3.4 - https://search.maven.org/search?q=a:HikariCP, https://github.com/brettwooldridge/HikariCP
 
 ### 1. 소개(Description)
 ##### 1. 해당 프로젝트는 Hikari-3.4 (Oracle) 라이브러리를 사용하여 커넥션풀을 구현하는 프로젝트이다.
